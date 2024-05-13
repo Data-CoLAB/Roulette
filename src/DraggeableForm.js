@@ -4,38 +4,46 @@ import { BiTrash, BiGridVertical, BiPlus } from "react-icons/bi";
 import { v4 as uuidv4 } from "uuid";
 import Roulette from "./Roulette";
 
-const FormularioTexto = () => {
+const FormularioTexto = ({ onFinish }) => {
   const [inputList, setInputList] = useState([
     {
       id: uuidv4(),
+      type: "spin_again",
       text: "Spin Again"
     },
     {
       id: uuidv4(),
+      type: "curiosity",
       text: "Curiosity"
     },
     {
       id: uuidv4(),
+      type: "you_win",
       text: "You Win!!"
     },
     {
       id: uuidv4(),
+      type: "challenge",
       text: "Challenge"
     },
     {
       id: uuidv4(),
+      type: "spin_again",
       text: "Spin Again"
     },
     {
       id: uuidv4(),
+      type: "curiosity",
       text: "Curiosity"
     },
     {
       id: uuidv4(),
+      type: "you_win",
       text: "You Win!!"
     },
     {
       id: uuidv4(),
+      type: "challenge",
       text: "Challenge"
     }
   ]);
@@ -72,7 +80,7 @@ const FormularioTexto = () => {
   return (
     <div className="main-form">
       {/*  */}
-      <Roulette data={inputList} />
+      <Roulette data={inputList} onFinish={(e) => onFinish(e)} />
     </div>
   );
 };

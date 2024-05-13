@@ -1,0 +1,141 @@
+[
+  {
+    "type": "spin_again",
+    "color": "#662d91"
+  },
+  {
+    "type": "curiosity",
+    "color": "#838bc5",
+    "content": [
+      [
+        {
+          "answer": "Sabias que os bancos fazem milhões todos os anos ao reconhecerem a tua voz? Empresas como bancos analisam a tua voz entre outros dados para o colocar em linha com alguém semelhante em termos de pronúncia. Além disso, usam modelos pré-treinados que analisam em tempo real indicadores como o tom de voz, velocidade da fala, uso de palavras negativas e padrões no discurso do cliente, para o direcionar para um determinado serviço, outro atendente, ou mesmo detetarem fraudtext"
+        },
+        {
+          "answer": "Já te perguntaste como carros autônomos podem \"ver\" e \"tomar decisões\" enquanto dirigem? A resposta está na aplicação de data science que permite que os veículos recolham, processem e analisem grandes quantidades de dados em tempo real para detetar obstáculos, reconhecer sinais de trânsito e prever ações de outros motoristas. Além disso, é fundamental para otimizar o desempenho do veículo, melhorar a eficiência energética, aumentar a segurança e diminuir o tempo de resposta. À medida que a tecnologia avança, a data science continuará a ter um papel crucial na evolução de tecnologias autônomatext"
+        },
+        {
+          "answer": "Grace Brewster Murray Hopper (1906-1992), doutora em matemática pela universidade de Yale, ficou na história por ser uma inovadora programadora nas primeiras gerações de computadores. Em 1943, durante a segunda guerra mundial, decidiu incorporar-se à marinha americana e foi enviada para o laboratório de cálculo Howard Aiken na Universidade de Harvard. A 9 de setembro de 1945 o seu grupo de trabalho encontrava-se a tentar averiguar o porquê de o computador não funcionar adequadamente. Depois de um exame minucioso conseguiram detetar o problema: uma mariposa entre os contatos de uns dos relés do Mark II. Mais tarde, Grace registou o incidente no seu caderno de registos, onde colou a borboleta que causou o problema e anotou \"First atual case of bug being fountext"
+        },
+        {
+          "answer": "A primeira pessoa a escrever aquela que é a atual compreensão de um programa foi Ada Lovelace. Sendo a única filha legítima do poeta Lord Byron, a mãe de Ada temia que a sua filha sofresse a mesma loucura que o pai. Para evitar isso, ela dedicou a filha a estudar matemática e ciências. Enquanto trabalhava com um colega num computador mecânico de uso geral conhecido como Analytical Engine, reconheceu que a máquina poderia fazer mais do que cálculos simples e puros. Assim, publicou o primeiro algoritmo destinado a ser executado por uma máquina como esttext"
+        },
+        {
+          "answer": "Os engenheiros de software têm uma taxa de aprendizagem superior às restantes profissões. Embora as mudanças sejam rápidas em todos os setores, acontecem mais rápido na área da tecnologia. 48% do tempo de trabalho dos softwares developers é dedicado a aprender novas competências, em comparação com 36% de todos os restantes profissionaitext"
+        },
+        {
+          "answer": "Sabias que o Dubai quer medir a felicidades dos seus habitantes e visitantes? O medidor de felicidade é uma das primeiras iniciativas estratégicas de Smart City do Dubai, é o primeiro mecanismo de captura de sentimento ao vivo em toda a cidade. A iniciativa visa mensurar o índice de felicidade dos consumidores com câmaras inteligentes que vão analisar a extensão dessa felicidade. A tecnologia analisa as expressões faciais dos consumidores antes e depois de realizarem transações (sem colocar em causa o respeito pela privacidade). Assim, a tecnologia fornece um indicador instantâneo e preciso da felicidade dos consumidoretext"
+        },
+        {
+          "answer": "O Google é conhecido pela sua cultura de inovação, mas sabias que os funcionários têm permissão para dedicar 20% do seu tempo de trabalho em projetos pessoais? Muitos dos produtos populares do Google, como o Gmail e o Google Maps, surgiram desta polítictext"
+        },
+        {
+          "answer": "Sabias que o criador do Bitcoin, conhecido pelo pseudônimo Satoshi Nakamoto, permanece anónimo até hoje? A identidade por trás desta inovação revolucionária ainda é um mistério, acrescentando um elemento de intriga à história das criptomoedatext"
+        },
+        {
+          "answer": "Estão a ser utilizadas impressoras 3D para criar órgãos artificiais e próteses personalizadas. No futuro, esta tecnologia poderá permitir a produção de órgãos humanos totalmente funcionais a partir de células do próprio pacienttext"
+        },
+        {
+          "answer": "Em 2016, o AlphaGo, desenvolvido pela DeepMind (uma subsidiária da Alphabet Inc.), tornou-se o primeiro programa de computador a derrotar um campeão mundial humano no jogo complexo de tabuleiro Go. Este feito destacou o poder do machine learning em resolver problemas difíceis e estratégicotext"
+        }
+      ]
+    ]
+  },
+  {
+    "type": "you_win",
+    "color": "#37ab9b"
+  },
+  {
+    "type": "challenge",
+    "color": "#315e85",
+    "content": [
+      [
+        {
+          "question": "Qual é o ramo da inteligência artificial que se concentra na interação entre humanos e computadores através de linguagem natural?",
+          "options": [
+            "Processamento de Linguagem Natural (PLN)",
+            "Deep Learning"
+          ],
+          "correct": 0,
+          "answer": "Processamento de Linguagem Natural (PLN) é o ramo da inteligência artificial que se concentra na interação entre humanos e computadores por meio de linguagem natural, como fala e texto. Ele permite que os computadores entendam, interpretem e gerem linguagem humana de forma eficaz."
+        },
+        {
+          "question": "Quantos bytes de dados existem por cada grão de areia no planeta Terra?",
+          "options": [
+            "100 bytes de dados",
+            "100 000 bytes de dados",
+            "250 000 bytes de dados",
+            "400 000 bytes de dados"
+          ],
+          "correct": 3,
+          "answer": "Existem 400,000 bytes de dados por cada grão de areia no planeta Terra. Entre o início da civilização e 2003, foram criados, no total, cinco exabytes de dados. Em 2010, esta quantia era criada a cada dois dias e em 2021 já estava a ser criada a cada quarenta minutos. Ainda assim, menos de 0.5% de todos os dados criados chegam alguma vez a ser analisados e usados."
+        },
+        {
+          "question": "Será possível descobrir uma gravidez, sem um teste de gravidez?",
+          "options": ["Sim", "É impossível"],
+          "correct": 0,
+          "answer": "É possível, através de um modelo de machine learning alimentado com dados de grávidas, dados de onde moram e o que compram, prever quem está grávida. Aliás, não só prever quem está grávida, mas o trimestre da gravidez. Assim, quando sabem que alguém está grávida, essa mulher irá receber publicidade relacionada com bebês, e se nunca reparou, é porque as misturam propositadamente com artigos como batatas fritas e brinquedos."
+        },
+        {
+          "question": "É possível através da análise de linguagem natural prever a probabilidade de:",
+          "options": [
+            "as pessoas visitarem um jardim zoológico",
+            "divórcio",
+            "estarem próximas de burnout",
+            "ganhar o Euromilhões"
+          ],
+          "correct": 1,
+          "answer": "As palavras têm poder sim. É possível, através da análise de linguagem natural prever a probabilidade de divórcio. Investigadores utilizaram algoritmos de análise de linguagem natural para examinar a comunicação verbal de casais e descobriram uma correlação interessante: quanto mais frequentemente um casal usava pronomes pessoais, como \"eu\" e \"meu\", maior a probabilidade de se divorciarem, mostrando que a linguagem que usamos pode revelar muito sobre a dinâmica e a qualidade dos relacionamentos."
+        },
+        {
+          "question": "A Data Science é uma área muito recente que surgiu apenas nos últimos anos.",
+          "options": ["Verdadeiro", "Falso"],
+          "correct": 1,
+          "answer": "Falso. A Data Science foi fundamental já na melhoria dos aviões aliados na Segunda Guerra Mundial. A análise de dados mostrava um padrão nos danos sofridos pelos aviões que retornavam, e decidiu-se fortalecer as zonas baleadas, já que fortalecer todo o avião o tornaria demasiado pesado. Mas o matemático Abraham Wald notou que todos os dados recolhidos pertenciam aos aviões que regressaram à base, e não aos que haviam sido derrubados (viés da sobrevivência). Na verdade, nenhum avião com buracos no motor ou na cabine do piloto havia retomado. A solução seria, então, reforçar estas zonas e evitar reforçar as identificadas previamente."
+        },
+        {
+          "question": "Inconscientemente, nós, seres humanos, estamos a contribuir para o desenvolvimento da inteligência artificial.",
+          "options": ["Verdadeiro", "Falso"],
+          "correct": 0,
+          "answer": "Verdadeiro. Quando identifica um determinado objeto em imagens, para verificar que é humano, estas são imagens reais e está a contribuir para modelos de Data Science, e aplicações como o Google Maps. Várias empresas usam técnicas semelhantes para recolher e classificar grandes quantidades de dados que são usados para treinar aplicações de reconhecimento de imagem, reconhecimento de voz, tradução, deteção de spam, visualização de texto e muito mais."
+        },
+        {
+          "question": "Para o ano de 2026, espera-se que a análise de dados permita:",
+          "options": [
+            "a diminuição de 30% do emprego para Data Scientist",
+            "o aumento de 30% do emprego para Data Scientist",
+            "a diminuição de 55% do emprego para Data Scientist",
+            "o aumento de 55% do emprego para Data Scientist"
+          ],
+          "correct": 1,
+          "answer": "A análise de dados é uma área em rápido crescimento, com uma projeção de aumento de 30% do emprego de cientistas de dados até 2026."
+        },
+        {
+          "question": "O que significa a sigla SQL?",
+          "options": [
+            "Structured Query Language",
+            "Software de Quantificação Linear"
+          ],
+          "correct": 0,
+          "answer": "SQL é a sigla para Structured Query Language, uma linguagem de programação utilizada para gerenciar e manipular bancos de dados relacionais. É amplamente utilizada para consultas, inserções, atualizações e exclusões de dados em bancos de dados."
+        },
+        {
+          "question": "Os hackers e vírus existentes são todos maliciosos para o normal funcionamento de dispositivos tecnológicos.",
+          "options": ["Verdadeiro", "Falso"],
+          "correct": 1,
+          "answer": "A ideia de um vírus de computador foi publicada no estudo de John von Neumann em 1949. O programa não era um software malicioso ativo, uma vez que não causava danos nos dados. O único efeito era uma mensagem enviada que dizia “I'm the creeper, catch me if you can\". Contudo, não demorou muito até a intenção de um software autorreplicante se tornar maliciosa. Contudo, boas notícias! Existem “hackers éticos” que trabalham pelo bem. Na realidade, é uma ótima oportunidade de carreira!"
+        },
+        {
+          "question": "Sabias que o Processamento de Linguagem Natural é utilizado em assistentes virtuais, como a Siri da Apple e a Alexa da Amazon? Qual é o principal desafio enfrentado pelo PLN nestas aplicações?",
+          "options": [
+            "Reconhecimento de voz em ambientes barulhentos",
+            "Compreensão de linguagem informal e contextos variados",
+            "Tradução de idiomas em tempo real"
+          ],
+          "correct": 1,
+          "answer": "O principal desafio do PLN em assistentes virtuais é entender e interpretar corretamente linguagem informal e contextos variados para fornecer answers precisas e relevantes aos utilizadores."
+        }
+      ]
+    ]
+  }
+]

@@ -1,18 +1,11 @@
-import React, { useState, useEffect, useRef  } from "react";
+import React, { useEffect, useState } from "react";
+import Toast from 'react-bootstrap/Toast';
 import { Wheel } from "react-custom-roulette";
 import logo from './logo-1.png';
-import Alert from 'react-popup-alert'
-import Popup from 'react-popup';
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Toast from 'react-bootstrap/Toast';
-import Form from 'react-bootstrap/Form';
-import ToastContainer from 'react-bootstrap/ToastContainer';
 
 
 
-const Roulette = ({ data }) => {
+const Roulette = ({ data, onFinish }) => {
   const [alert, setAlert] = useState({
     type: 'error',
     text: 'This is a alert message',
@@ -21,17 +14,24 @@ const Roulette = ({ data }) => {
   const [mustSpin, setMustSpin] = useState(false);
   const [prizeNumber, setPrizeNumber] = useState(0);
   const [rouletteData, setRouletteData] = useState(data);
-  const [res, setRes] = useState("false");
+  const [res, setRes] = useState();
   const [basicModal, setBasicModal] = useState(false);
   const toggleShow = () => setBasicModal(!basicModal);
   const [show, setShow] = useState(false);
 
-
   const handleSpinClick = () => {
     const newPrizeNumber = Math.floor(Math.random() * data.length);
     setPrizeNumber(newPrizeNumber);
+    setRes(null)
     setMustSpin(true);
   };
+
+  useEffect(() => {
+    console.log(res)
+    if (res) {
+      onFinish(res);
+    }
+  }, [res]);
 
   useEffect(() => {
     const addShortString = data.map((item) => {
@@ -46,7 +46,7 @@ const Roulette = ({ data }) => {
     setRouletteData(addShortString);
   }, [data]);
 
-  const onCloseAlert= () => {
+  const onCloseAlert = () => {
     setAlert({
       type: '',
       text: '',
@@ -55,7 +55,7 @@ const Roulette = ({ data }) => {
     console.log("ai");
   }
 
-  
+
   const onShowAlert = () => {
     setAlert({
       type: "warning",
@@ -66,12 +66,12 @@ const Roulette = ({ data }) => {
 
   return (
     <>
- 
-    <div className="fixd">
-    <div className="pop">
-        <Toast style={{backgroundColor:'#37ab9b'}} onClose={() => setShow(false)} show={show} delay={3000} autohide>
-          <Toast.Body ><div className="bb">{res}</div></Toast.Body>
-        </Toast>
+
+      <div className="fixd">
+        <div className="pop">
+          <Toast style={{ backgroundColor: '#37ab9b' }} onClose={() => setShow(false)} show={show} delay={3000} autohide>
+            <Toast.Body ><div className="bb">{res}</div></Toast.Body>
+          </Toast>
         </div>
       </div>
       <div align="center" className="roulette-container">
@@ -98,33 +98,29 @@ const Roulette = ({ data }) => {
             "#37ab9b",
             "#315e85",
           ]}
-          onStopSpinning={() => {
+          onStopSpinning={(e) => {
             setMustSpin(false);
-            if(prizeNumber==0||prizeNumber==4)
-            {
-            console.log(prizeNumber+" Spin Again");
-            setRes("Spin Again");
+            if (prizeNumber == 0 || prizeNumber == 4) {
+              console.log(prizeNumber + " Spin Again");
+              setRes("spin_again");
             }
-            if(prizeNumber==1||prizeNumber==5)
-            {
-            console.log(prizeNumber+" Curiosity" );
-            setRes("Curiosity");
+            if (prizeNumber == 1 || prizeNumber == 5) {
+              console.log(prizeNumber + " Curiosity");
+              setRes("curiosity");
             }
-            if(prizeNumber==2||prizeNumber==6)
-            {
-            console.log(prizeNumber+"You Win!!" );
-            setRes("You Win!!");
+            if (prizeNumber == 2 || prizeNumber == 6) {
+              console.log(prizeNumber + "You Win!!");
+              setRes("you_win");
             }
-            if(prizeNumber==3||prizeNumber==7)
-            {
-            console.log(prizeNumber+" Challenge" );
-            setRes("Challenge");
-          }
-         // setShow(true)
+            if (prizeNumber == 3 || prizeNumber == 7) {
+              console.log(prizeNumber + " Challenge");
+              setRes("challenge");
+            }
+            // setShow(true)
           }}
         />
         <button className="button roulette-button" onClick={handleSpinClick}>
-        <img src={logo} className="logocol" alt="Logo" />
+          <img src={logo} className="logocol" alt="Logo" />
         </button>
       </div>
       <br />

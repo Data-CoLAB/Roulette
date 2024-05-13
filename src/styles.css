@@ -1,17 +1,69 @@
 body {
   margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-color: #82a5a1;
   /*background-image: url("frentejpeg.jpeg");*/
   background-color: #aecdcf;
+  overflow: hidden;
 }
-.bb{
+
+h1 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+h3 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+}
+p {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+blockquote {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 17.5px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+pre {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
+}
+
+.root {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.bb {
   font-size: 20px;
   font-weight: bold;
   color: white;
 }
-.gTLZXx{
+.gTLZXx {
   position: absolute;
   z-index: 5;
   width: 12%;
@@ -19,25 +71,48 @@ body {
   top: 9%;
 }
 
-.pop{
+.pop {
   margin-top: -5%;
   margin-left: 55%;
   min-width: 200px;
 }
-.fixd{
+.fixd {
   position: absolute;
   z-index: 10;
 }
 .centered-div {
+  position: absolute;
+  top: 0;
+  width: 100%;
   align-items: center;
   vertical-align: middle;
   justify-content: center;
-  height: 90vh;
+  height: 100%;
+}
+
+.main-container video {
+  position: absolute;
+  top: 0;
+}
+
+.main-container {
+  display: flex;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.correct::after {
+  content: "";
+  background-color: green;
+  position: absolute;
+  width: calc(100% + 10px);
+  left: -10px;
+  height: 100%;
+  z-index: -1;
+  border-radius: 16px;
 }
 
 .button {
@@ -56,9 +131,9 @@ code {
   cursor: pointer;
 }
 
-.logocol{
- width: 160%;
- height: 160%;
+.logocol {
+  width: 160%;
+  height: 160%;
 }
 
 .roulette-button {
@@ -124,7 +199,6 @@ code {
   align-items: center;
 }
 
-
 .result-text {
   color: #5b627d;
   font-size: 1.25rem;
@@ -147,14 +221,14 @@ i,
 svg {
   margin-right: 1rem;
 }
-.App {
+/* .App {
   font-family: sans-serif;
   text-align: center;
   justify-content: center;
   height: 100%;
   width: 100%;
-
-}
+  margin-top: 150px;
+} */
 
 .text-title {
   font-size: 1.25rem;
@@ -180,6 +254,14 @@ svg {
   );
 }
 
+.video {
+  position: absolute !important;
+  z-index: 168;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
 .roulette-container {
   position: relative;
   width: 100%;
@@ -197,5 +279,152 @@ svg {
 
 .main-form {
   max-width: 600px;
-  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cardInfo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  width: 75%;
+  height: 75%;
+  border-radius: 16px;
+  transform: translate(-50%, -50%);
+  background-color: aliceblue;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* Começa invisível */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform-style: preserve-3d;
+}
+
+.cardInfo.show {
+  opacity: 1; /* Torna o card visível */
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  text-align: center;
+}
+
+.cardInfo .closeButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.cardInfo .closeButton::after {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="%23ffffff" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path fill="none" d="M0 0h24v24H0z"/></svg>');
+}
+
+.cardInfo .logo {
+  position: absolute;
+  height: 55px;
+  top: 32px;
+  left: 32px;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.card-content-questions {
+  /* Estilos para o contêiner principal */
+  position: relative;
+  font-family: Verdana, sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-content-winner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  border-radius: 15px;
+  top: 0;
+}
+
+.card-content-questions h1 {
+  /* Estilos para o título */
+  font-size: 28px; /* Aumenta o tamanho da fonte */
+  margin-bottom: 55px; /* Adiciona um pouco mais de espaço abaixo do título */
+  line-height: 1.4;
+}
+
+.card-content-questions input[type="radio"] {
+  /* Esconder os botões de rádio padrão */
+  display: none;
+}
+
+.card-content-questions input[type="radio"] + label {
+  /* Estilos para os rótulos dos botões de rádio */
+  display: inline-block; /* Coloca os rótulos e botões na mesma linha */
+  font-size: 24px; /* Aumenta o tamanho da fonte dos rótulos */
+  position: relative;
+  padding-left: 30px; /* Adiciona espaço para o círculo personalizado */
+  cursor: pointer;
+}
+
+.card-content-questions input[type="radio"] + label:before {
+  /* Cria um círculo personalizado */
+  content: "";
+  display: inline-block;
+  width: 20px; /* Define o tamanho do círculo */
+  height: 20px; /* Define o tamanho do círculo */
+  border: 2px solid white; /* Cor da borda do círculo */
+  border-radius: 50%; /* Torna o círculo redondo */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.card-content-questions input[type="radio"]:checked + label:before {
+  /* Altera a cor do círculo quando o botão de rádio estiver selecionado */
+  background-color: white; /* Cor de preenchimento do círculo */
+}
+
+.card-content-button {
+  font-family: Verdana, Geneva, sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 19px;
+  border: 1px solid #ffffff;
+  border-radius: 16px;
+  padding: 15px 50px;
+  cursor: pointer;
+  margin-top: 55px;
+  max-width: 280px;
+  align-self: center;
+}
+
+.card-content h2 {
+  text-align: justify;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+}
+.cardInfo h3 {
+  position: absolute;
+  font-size: 20px;
+  bottom: 32px;
+  right: 32px;
+  opacity: 0.5;
+  color: white;
 }
