@@ -1,0 +1,85 @@
+/* {
+          "question": "Qual é o ramo da inteligência artificial que se concentra na interação entre humanos e computadores através de linguagem natural?",
+          "options": [
+            "Processamento de Linguagem Natural (PLN)",
+            "Deep Learning"
+          ],
+          "correct": 0,
+          "answer": "Processamento de Linguagem Natural (PLN) é o ramo da inteligência artificial que se concentra na interação entre humanos e computadores por meio de linguagem natural, como fala e texto. Ele permite que os computadores entendam, interpretem e gerem linguagem humana de forma eficaz."
+        },
+        {
+          "question": "Quantos bytes de dados existem por cada grão de areia no planeta Terra?",
+          "options": [
+            "100 bytes de dados",
+            "100 000 bytes de dados",
+            "250 000 bytes de dados",
+            "400 000 bytes de dados"
+          ],
+          "correct": 3,
+          "answer": "Existem 400,000 bytes de dados por cada grão de areia no planeta Terra. Entre o início da civilização e 2003, foram criados, no total, cinco exabytes de dados. Em 2010, esta quantia era criada a cada dois dias e em 2021 já estava a ser criada a cada quarenta minutos. Ainda assim, menos de 0.5% de todos os dados criados chegam alguma vez a ser analisados e usados."
+        },
+        {
+          "question": "Será possível descobrir uma gravidez, sem um teste de gravidez?",
+          "options": ["Sim", "É impossível"],
+          "correct": 0,
+          "answer": "É possível, através de um modelo de machine learning alimentado com dados de grávidas, dados de onde moram e o que compram, prever quem está grávida. Aliás, não só prever quem está grávida, mas o trimestre da gravidez. Assim, quando sabem que alguém está grávida, essa mulher irá receber publicidade relacionada com bebês, e se nunca reparou, é porque as misturam propositadamente com artigos como batatas fritas e brinquedos."
+        },
+        {
+          "question": "É possível através da análise de linguagem natural prever a probabilidade de:",
+          "options": [
+            "as pessoas visitarem um jardim zoológico",
+            "divórcio",
+            "estarem próximas de burnout",
+            "ganhar o Euromilhões"
+          ],
+          "correct": 1,
+          "answer": "As palavras têm poder sim. É possível, através da análise de linguagem natural prever a probabilidade de divórcio. Investigadores utilizaram algoritmos de análise de linguagem natural para examinar a comunicação verbal de casais e descobriram uma correlação interessante: quanto mais frequentemente um casal usava pronomes pessoais, como \"eu\" e \"meu\", maior a probabilidade de se divorciarem, mostrando que a linguagem que usamos pode revelar muito sobre a dinâmica e a qualidade dos relacionamentos."
+        },
+        {
+          "question": "A Data Science é uma área muito recente que surgiu apenas nos últimos anos.",
+          "options": ["Verdadeiro", "Falso"],
+          "correct": 1,
+          "answer": "Falso. A Data Science foi fundamental já na melhoria dos aviões aliados na Segunda Guerra Mundial. A análise de dados mostrava um padrão nos danos sofridos pelos aviões que retornavam, e decidiu-se fortalecer as zonas baleadas, já que fortalecer todo o avião o tornaria demasiado pesado. Mas o matemático Abraham Wald notou que todos os dados recolhidos pertenciam aos aviões que regressaram à base, e não aos que haviam sido derrubados (viés da sobrevivência). Na verdade, nenhum avião com buracos no motor ou na cabine do piloto havia retomado. A solução seria, então, reforçar estas zonas e evitar reforçar as identificadas previamente."
+        },
+        {
+          "question": "Inconscientemente, nós, seres humanos, estamos a contribuir para o desenvolvimento da inteligência artificial.",
+          "options": ["Verdadeiro", "Falso"],
+          "correct": 0,
+          "answer": "Verdadeiro. Quando identifica um determinado objeto em imagens, para verificar que é humano, estas são imagens reais e está a contribuir para modelos de Data Science, e aplicações como o Google Maps. Várias empresas usam técnicas semelhantes para recolher e classificar grandes quantidades de dados que são usados para treinar aplicações de reconhecimento de imagem, reconhecimento de voz, tradução, deteção de spam, visualização de texto e muito mais."
+        },
+        {
+          "question": "Para o ano de 2026, espera-se que a análise de dados permita:",
+          "options": [
+            "a diminuição de 30% do emprego para Data Scientist",
+            "o aumento de 30% do emprego para Data Scientist",
+            "a diminuição de 55% do emprego para Data Scientist",
+            "o aumento de 55% do emprego para Data Scientist"
+          ],
+          "correct": 1,
+          "answer": "A análise de dados é uma área em rápido crescimento, com uma projeção de aumento de 30% do emprego de cientistas de dados até 2026."
+        },
+        {
+          "question": "O que significa a sigla SQL?",
+          "options": [
+            "Structured Query Language",
+            "Software de Quantificação Linear"
+          ],
+          "correct": 0,
+          "answer": "SQL é a sigla para Structured Query Language, uma linguagem de programação utilizada para gerenciar e manipular bancos de dados relacionais. É amplamente utilizada para consultas, inserções, atualizações e exclusões de dados em bancos de dados."
+        },
+        {
+          "question": "Os hackers e vírus existentes são todos maliciosos para o normal funcionamento de dispositivos tecnológicos.",
+          "options": ["Verdadeiro", "Falso"],
+          "correct": 1,
+          "answer": "A ideia de um vírus de computador foi publicada no estudo de John von Neumann em 1949. O programa não era um software malicioso ativo, uma vez que não causava danos nos dados. O único efeito era uma mensagem enviada que dizia “I'm the creeper, catch me if you can\". Contudo, não demorou muito até a intenção de um software autorreplicante se tornar maliciosa. Contudo, boas notícias! Existem “hackers éticos” que trabalham pelo bem. Na realidade, é uma ótima oportunidade de carreira!"
+        },
+        {
+          "question": "Sabias que o Processamento de Linguagem Natural é utilizado em assistentes virtuais, como a Siri da Apple e a Alexa da Amazon? Qual é o principal desafio enfrentado pelo PLN nestas aplicações?",
+          "options": [
+            "Reconhecimento de voz em ambientes barulhentos",
+            "Compreensão de linguagem informal e contextos variados",
+            "Tradução de idiomas em tempo real"
+          ],
+          "correct": 1,
+          "answer": "O principal desafio do PLN em assistentes virtuais é entender e interpretar corretamente linguagem informal e contextos variados para fornecer answers precisas e relevantes aos utilizadores."
+        } */

@@ -110,7 +110,6 @@ export default function App() {
             </div>
           )}
         </div>
-        <h3>Feira de Emprego IPVC - 2024</h3>
       </div>
       }
     </>
